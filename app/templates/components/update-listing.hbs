@@ -1,0 +1,20 @@
+{{yield}}
+{{#if showUpdateListing}}
+  <div class="container">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title" class="form-control" placeholder=listing.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        {{textarea row="4" cols="50" value=description id="description" class="form-control" placeholder=listing.description}}
+      </div>
+    </form>
+    <button class="btn btn-success"{{action 'updateListing' listing}}>Update Listing</button>
+    <button class="btn btn-danger" {{action 'updateListingHide'}}>Cancel</button>
+  </div>
+{{else}}
+  <button class="btn" {{action 'updateListingShow'}}>Update Listing</button>
+{{/if}}
