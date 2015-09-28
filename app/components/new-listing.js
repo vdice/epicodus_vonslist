@@ -19,6 +19,7 @@ export default Ember.Component.extend({
       };
 
       this.sendAction('saveListing', params);
+      this.set('showNewListing', false);
     }
   }
 });

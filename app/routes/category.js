@@ -7,9 +7,9 @@ export default Ember.Route.extend({
   actions: {
     saveListing(params) {
       var newListing = this.store.createRecord('listing', params);
-      newListing.save()
-        .catch(e => {console.log(e.errors)});
-      this.transitionTo('category', params.category.id);
+      newListing.save();
+      params.category.save();
+      this.transitionTo('category', params.category);
     }
   }
 });
