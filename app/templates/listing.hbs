@@ -2,4 +2,5 @@
 <h2>{{model.title}}</h2>
 <h5>{{model.description}}</h5>
 {{update-listing listing=model updateListing="updateListing"}}
+<button {{action "deleteListing" model}}>Delete Listing</button>
 {{outlet}}
