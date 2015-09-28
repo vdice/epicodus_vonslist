@@ -1,0 +1,13 @@
+import Ember from 'ember';
+
+export default Ember.Route.extend({
+  model(params) {
+    return this.store.findAll('listing').then(function(listings) {
+      var regex = new RegExp(params.searchKey);
+
+      return listings.filter(function(listing) {
+        return regex.test(listing.get('title'))
+      });
+    });
+  }
+});
