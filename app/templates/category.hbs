@@ -2,7 +2,10 @@
   {{model.name}}
 </h2>
 
+<h4>{{new-listing category=model saveListing="saveListing"}}</h4>
+
 <ul>
+  <h3>Listings</h3>
   {{#each model.listings as |listing|}}
     <li>
       <h4>
