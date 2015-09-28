@@ -1,15 +1,44 @@
 {
   "categories": [
     {
-      "name": "furniture"
+      "name": "furniture",
+      "listings": {"0": true}
     }, {
-      "name": "toys"
+      "name": "toys",
+      "listings": {"1": true}
     }, {
-      "name": "free"
+      "name": "free",
+      "listings": {"2": true}
     }, {
-      "name": "appliances"
+      "name": "appliances",
+      "listings": {"3": true}
     }, {
-      "name": "medicinals"
+      "name": "medicinals",
+      "listings": {"4": true}
+    }
+  ],
+
+  "listings": [
+    {
+      "title": "table",
+      "description": "it stands and it is made out of mahogony wood. Comes with several legs.",
+      "category": "0"
+    }, {
+      "title": "yo-yo",
+      "description": "it can walk the dog, it is red, and you can use it as a weapon in the state of Florida. Totally legal. Make my day.",
+      "category": "1"
+    }, {
+      "title": "taco",
+      "description": "got one too many tacos from taco bell. Can't find a homeless person to give it to. Pick it up at your convenience. First come first serve.",
+      "category": "2"
+    }, {
+      "title": "cuisinart",
+      "description": "if you like smoothies, you can use this blender. It's just like a jamba juice blender except not as good.",
+      "category": "3"
+    }, {
+      "title": "the herb",
+      "description": "decided to start selling my ganja since now it is legal. No stems, no seeds. Smoke weed erryday.",
+      "category": "4"
     }
   ]
 }
