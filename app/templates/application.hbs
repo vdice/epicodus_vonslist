@@ -19,11 +19,10 @@
     </div>
   </div>
 </nav> -->
-<div class="container">
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 sidebar">
+    <div class="col-sm-4 col-md-3 col-lg-3 sidebar">
       <ul class="nav nav-bar">
         <li class="active">{{#link-to 'index'}}vonslist <span class="sr-only">(current)</span>{{/link-to}}</li>
         <li>{{search-bar listings=model.listings search="search"}}</li>
@@ -42,11 +41,10 @@
       </ul> -->
     </div>
 
-    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 main">
+    <div class="col-sm-8 col-md-9 col-lg-9 main">
       <div class="ll-cool-div">
         {{outlet}}
       </div>
     </div>
   </div>
-</div>
 </div>

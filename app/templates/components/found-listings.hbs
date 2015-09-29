@@ -1,11 +1,15 @@
 {{yield}}
 
-<ul>
-  {{#each listings as |listing|}}
-    <li>
-      {{#link-to 'listing' listing.id}}
-        {{listing.title}}
-      {{/link-to}}
-    </li>
-  {{/each}}
-</ul>
+{{#if listings}}
+  <ul>
+    {{#each listings as |listing|}}
+      <li>
+        {{#link-to 'listing' listing.id}}
+          {{listing.title}}
+        {{/link-to}}
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <h4>Sorry, we could not find any listings with the keyword</h4>
+{{/if}}
