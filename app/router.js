@@ -8,7 +8,7 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('category', {path: '/category/:category_id'});
   this.route('listing', {path: '/listing/:listing_id'});
-  this.route('search-results', {path: ':searchKey'});
+  this.route('search-results', {path: '/results/:searchKey'});
 });
 
 export default Router;
