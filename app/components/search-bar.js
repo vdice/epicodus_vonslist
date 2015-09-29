@@ -6,7 +6,7 @@ export default Ember.Component.extend({
       var params = {
         searchKey: this.get('searchKey'),
         listings: this.get('listings')
-      }
+      };
       this.sendAction('search', params);
     }
   }

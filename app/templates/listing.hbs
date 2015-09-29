@@ -1,5 +1,5 @@
 <p>back to {{#link-to "category" model.category.id}}{{model.category.name}}{{/link-to}}</p>
-<h2>{{model.title}}</h2>
+<h2>{{model.title}}</h2><h5>{{format-date model.date}}</h5>
 <h5>{{model.description}}</h5>
 {{update-listing listing=model updateListing="updateListing"}}
 <button {{action "deleteListing" model}}>Delete Listing</button>

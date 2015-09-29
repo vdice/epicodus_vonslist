@@ -12,7 +12,7 @@ export default Ember.Route.extend({
         }
       });
 
-      listing.save()
+      listing.save();
     },
     deleteListing(listing) {
       var category = listing.get('category');

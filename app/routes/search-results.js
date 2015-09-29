@@ -6,7 +6,7 @@ export default Ember.Route.extend({
       var regex = new RegExp(params.searchKey);
 
       return listings.filter(function(listing) {
-        return (regex.test(listing.get('title')) || regex.test(listing.get('description')))
+        return (regex.test(listing.get('title')) || regex.test(listing.get('description')));
       });
     });
   }
