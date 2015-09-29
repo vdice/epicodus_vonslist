@@ -1,0 +1,13 @@
+{{yield}}
+<ul>
+  <h3>Listings</h3>
+  {{#each sortedListings as |listing|}}
+    <li>
+      <h4>
+        {{#link-to 'listing' listing.id}}
+          {{listing.title}} {{format-date listing.date}}
+        {{/link-to}}
+      </h4>
+    </li>
+  {{/each}}
+</ul>

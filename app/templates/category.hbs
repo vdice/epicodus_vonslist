@@ -4,15 +4,4 @@
 
 <h4>{{new-listing category=model saveListing="saveListing"}}</h4>
 
-<ul>
-  <h3>Listings</h3>
-  {{#each model.listings as |listing|}}
-    <li>
-      <h4>
-        {{#link-to 'listing' listing.id}}
-          {{listing.title}}
-        {{/link-to}}
-      </h4>
-    </li>
-  {{/each}}
-</ul>
+{{listing-listing listings=model.listings}}

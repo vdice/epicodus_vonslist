@@ -22,23 +22,28 @@
     {
       "title": "table",
       "description": "it stands and it is made out of mahogony wood. Comes with several legs.",
-      "category": "0"
+      "category": "0",
+      "date": "Monday, September 28, 2015"
     }, {
       "title": "yo-yo",
       "description": "it can walk the dog, it is red, and you can use it as a weapon in the state of Florida. Totally legal. Make my day.",
-      "category": "1"
+      "category": "1",
+      "date": "Monday, September 28, 2015"
     }, {
       "title": "taco",
       "description": "got one too many tacos from taco bell. Can't find a homeless person to give it to. Pick it up at your convenience. First come first serve.",
-      "category": "2"
+      "category": "2",
+      "date": "Monday, September 28, 2015"
     }, {
       "title": "cuisinart",
       "description": "if you like smoothies, you can use this blender. It's just like a jamba juice blender except not as good.",
-      "category": "3"
+      "category": "3",
+      "date": "Monday, September 28, 2015"
     }, {
       "title": "the herb",
       "description": "decided to start selling my ganja since now it is legal. No stems, no seeds. Smoke weed erryday.",
-      "category": "4"
+      "category": "4",
+      "date": "Monday, September 28, 2015"
     }
   ]
 }

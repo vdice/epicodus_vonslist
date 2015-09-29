@@ -13,6 +13,7 @@ export default Ember.Component.extend({
     saveListing() {
       var params = {
         title: this.get('title'),
+        author: this.get('author'),
         description: this.get('description'),
         category: this.get('category'),
         date: new Date()
