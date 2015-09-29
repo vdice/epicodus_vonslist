@@ -12,9 +12,9 @@
         {{textarea row="4" cols="50" value=description id="description" class="form-control" placeholder=listing.description}}
       </div>
     </form>
-    <button class="btn btn-success"{{action 'updateListing' listing}}>Update Listing</button>
-    <button class="btn btn-danger" {{action 'updateListingHide'}}>Cancel</button>
+    <button class="btn btn-success"{{action 'updateListing' listing}}><i class="fa fa-save"></i></button>
+    <button class="btn btn-danger" {{action 'updateListingHide'}}><i class="fa fa-close"></i></button>
   </div>
 {{else}}
-  <button class="btn" {{action 'updateListingShow'}}>Update Listing</button>
+  <button class="btn btn-success" {{action 'updateListingShow'}}>Update Listing</button>
 {{/if}}

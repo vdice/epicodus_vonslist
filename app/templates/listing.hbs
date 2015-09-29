@@ -1,7 +1,9 @@
 <p>back to {{#link-to "category" model.category.id}}{{model.category.name}}{{/link-to}}</p>
 <h2>{{model.title}}</h2><h5>{{format-date model.date}}</h5>
-<p>{{model.author}}</p>
-<h5>{{model.description}}</h5>
+<p>submitted by {{model.author}}</p>
+<div class="listing-description">
+  <h5>{{model.description}}</h5>
+</div>
 {{update-listing listing=model updateListing="updateListing"}}
-<button {{action "deleteListing" model}}>Delete Listing</button>
+<button class="btn btn-danger" {{action "deleteListing" model}}><i class="fa fa-trash"></i></button>
 {{outlet}}

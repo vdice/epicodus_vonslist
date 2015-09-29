@@ -11,3 +11,10 @@ ul li {
 .ll-cool-div {
   padding-top: 10px;
 }
+
+.listing-description {
+  background-color: #E6E6E6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
