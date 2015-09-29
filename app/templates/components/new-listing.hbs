@@ -1,5 +1,5 @@
 {{yield}}
-{{#if showNewListing}}
+{{#if showNewListing}}<hr>
   <div class="container">
     <form class="form-horizontal">
       <div class="form-group">
@@ -17,9 +17,9 @@
         {{textarea row="4" cols="50" value=description id="description" class="form-control" placeholder="Add description here..."}}
       </div>
     </form>
-    <button class="btn btn-success"{{action 'saveListing'}}>Add Listing</button>
-    <button class="btn btn-danger" {{action 'newListingHide'}}>Cancel</button>
+    <button class="btn btn-success"{{action 'saveListing'}}><i class="fa fa-save"></i></button>
+    <button class="btn btn-danger" {{action 'newListingHide'}}><i class="fa fa-close"></i></button>
   </div>
 {{else}}
-  <button class="btn" {{action 'newListingShow'}}>New Listing</button>
+  <button class="btn btn-success" {{action 'newListingShow'}}><i class="fa fa-plus"></i></button>
 {{/if}}

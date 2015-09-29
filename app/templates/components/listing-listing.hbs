@@ -5,7 +5,10 @@
     <li>
       <h4>
         {{#link-to 'listing' listing.id}}
-          {{listing.title}} {{format-date listing.date}}
+          <h5>
+            {{listing.title}}
+            <small>{{format-date listing.date}}</small>
+          </h5>
         {{/link-to}}
       </h4>
     </li>

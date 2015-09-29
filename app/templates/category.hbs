@@ -1,7 +1,6 @@
-<h2>
-  {{model.name}}
-</h2>
+<h2 class="category-header">
+  {{model.name}}{{new-listing category=model saveListing="saveListing"}}
 
-<h4>{{new-listing category=model saveListing="saveListing"}}</h4>
+</h2><hr>
 
 {{listing-listing listings=model.listings}}
